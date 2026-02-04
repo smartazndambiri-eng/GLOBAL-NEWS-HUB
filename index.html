@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global News Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#0f172a;
+  --accent:#ef4444;
+  --bg:#f8fafc;
+  --text:#334155;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:Inter,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  font-size:18px;
+}
+
+/* Header */
+header{
+  background:white;
+  padding:25px;
+  text-align:center;
+  font-size:1.8rem;
+  font-weight:700;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Container */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* News grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+/* Card */
+.card{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:18px;
+}
+
+.category{
+  font-size:0.8rem;
+  font-weight:700;
+  color:var(--accent);
+  margin-bottom:6px;
+  text-transform:uppercase;
+}
+
+.card h3{
+  font-size:1.2rem;
+  margin-bottom:8px;
+  color:var(--primary);
+}
+
+.card p{
+  font-size:0.95rem;
+  color:#64748b;
+}
+
+/* Footer */
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:35px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>Global News Hub</header>
+
+<main class="container">
+
+<section class="grid">
+
+<!-- 20 News Articles -->
+
+<article class="card">
+<img src="https://picsum.photos/400/300?1">
+<div class="card-content">
+<div class="category">World</div>
+<h3>Global Leaders Meet for Climate Summit</h3>
+<p>Nations pledge stronger commitments to reduce emissions.</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://picsum.photos/400/300?2">
+<div class="card-content">
+<div class="category">Politics</div>
+<h3>Parliament Passes Major Reform Bill</h3>
+<p>The new legislation reshapes national economic policy.</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://picsum.photos/400/300?3">
+<div class="card-content">
+<div class="category">Business</div>
+<h3>Stock Markets Hit Record Highs</h3>
+<p>Investors respond positively to global growth forecasts.</p>
+</div>
+</article>
+
+<article class="card"><img src="https://picsum.photos/400/300?4"><div class="card-content"><div class="category">Technology</div><h3>AI Breakthrough Changes Healthcare</h3><p>New system predicts diseases with high accuracy.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?5"><div class="card-content"><div class="category">Sports</div><h3>Championship Final Ends in Dramatic Win</h3><p>Fans celebrate a historic victory.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?6"><div class="card-content"><div class="category">World</div><h3>Earthquake Recovery Efforts Continue</h3><p>Rescue teams provide aid to affected regions.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?7"><div class="card-content"><div class="category">Health</div><h3>New Vaccine Shows Promising Results</h3><p>Scientists report major medical milestone.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?8"><div class="card-content"><div class="category">Technology</div><h3>Next-Gen Smartphones Revealed</h3><p>Manufacturers showcase cutting-edge designs.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?9"><div class="card-content"><div class="category">Business</div><h3>Startups Drive Innovation Boom</h3><p>Entrepreneurs reshape global industries.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?10"><div class="card-content"><div class="category">Sports</div><h3>Olympic Preparations Underway</h3><p>Host city readies for international spotlight.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?11"><div class="card-content"><div class="category">Politics</div><h3>Election Campaigns Intensify Nationwide</h3><p>Parties compete for voter support.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?12"><div class="card-content"><div class="category">Health</div><h3>Mental Health Awareness Expands</h3><p>Communities promote well-being initiatives.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?13"><div class="card-content"><div class="category">World</div><h3>International Trade Talks Resume</h3><p>Leaders seek economic cooperation.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?14"><div class="card-content"><div class="category">Technology</div><h3>Space Agency Announces New Mission</h3><p>Exploration project targets deep space.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?15"><div class="card-content"><div class="category">Business</div><h3>Energy Sector Sees Major Investment</h3><p>Renewable projects attract global funding.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?16"><div class="card-content"><div class="category">Sports</div><h3>Young Athlete Breaks World Record</h3><p>A new star rises in competitive athletics.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?17"><div class="card-content"><div class="category">Politics</div><h3>Diplomatic Talks Ease Tensions</h3><p>Negotiations show signs of progress.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?18"><div class="card-content"><div class="category">Health</div><h3>Nutrition Study Changes Guidelines</h3><p>Experts recommend updated diets.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?19"><div class="card-content"><div class="category">World</div><h3>Humanitarian Aid Reaches Thousands</h3><p>Relief efforts expand in crisis zones.</p></div></article>
+
+<article class="card"><img src="https://picsum.photos/400/300?20"><div class="card-content"><div class="category">Technology</div><h3>Cybersecurity Threats Increase Globally</h3><p>Experts warn of rising digital risks.</p></div></article>
+
+</section>
+
+</main>
+
+<footer>© 2026 Global News Hub</footer>
+
+</body>
+</html>
+
